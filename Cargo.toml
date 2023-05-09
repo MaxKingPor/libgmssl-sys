@@ -3,6 +3,8 @@ name = "libgmssl-sys"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
+description = "libgmssl-sys"
+license = "Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
