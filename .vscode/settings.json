@@ -1,0 +1,6 @@
+{
+    "clangd.fallbackFlags": [
+        "-Iinclude",
+        "-I${workspaceFolder}/GmSSL/include/"
+    ]
+}
