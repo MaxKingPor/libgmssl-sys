@@ -22,6 +22,7 @@ fn main() {
         .allowlist_file(r".*?gmssl.*?")
         // .blocklist_type(r".*?FILE.*?")
         // .blocklist_function(r".*?print$")
+        // .blocklist_function(r"^format.*$")
         // .blocklist_function(r".*?pem$")
         // .parse_callbacks(Box::new(bindgen::CargoCallbacks))
         .generate()
