@@ -1,16 +1,3 @@
-#![allow(non_camel_case_types)]
+#![allow(non_camel_case_types, non_snake_case, non_upper_case_globals)]
 
-pub mod sm2;
-pub use sm2::*;
-
-pub use hex::*;
-pub mod hex {
-    extern "C" {
-        pub fn hex_to_bytes(
-            in_: *const u8,
-            inlen: usize,
-            out: *mut u8,
-            outlen: *mut usize,
-        ) -> isize;
-    }
-}
+include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
