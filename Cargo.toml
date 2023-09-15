@@ -11,5 +11,18 @@ license = "Apache-2.0"
 # hex = { workspace = true }
 
 [build-dependencies]
-bindgen = "0.65.1"
+bindgen = "0.68.1"
 cmake = "0.1"
+
+
+[features]
+ENABLE_SM2_ALGOR_ID_ENCODE_NULL = []
+ENABLE_SM2_PRIVATE_KEY_EXPORT = []
+ENABLE_TLS_DEBUG = []
+ENABLE_SM3_AVX_BMI2 = []
+ENABLE_SM4_AESNI_AVX = []
+ENABLE_SM2_EXTS = []
+ENABLE_BROKEN_CRYPTO = []
+ENABLE_RDRND = []
+ENABLE_GMT_0105_RNG = []
+ENABLE_HTTP_TESTS = []

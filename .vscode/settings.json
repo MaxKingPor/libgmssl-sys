@@ -2,5 +2,6 @@
     "clangd.fallbackFlags": [
         "-Iinclude",
         "-I${workspaceFolder}/GmSSL/include/"
-    ]
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/GmSSL"
 }
