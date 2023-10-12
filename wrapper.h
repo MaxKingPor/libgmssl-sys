@@ -1,4 +1,7 @@
+#include <gmssl/aead.h>
 #include <gmssl/error.h>
+#include <gmssl/gcm.h>
+#include <gmssl/hex.h>
 #include <gmssl/mem.h>
 #include <gmssl/rand.h>
 #include <gmssl/sm2.h>

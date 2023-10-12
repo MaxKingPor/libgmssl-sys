@@ -1,6 +1,6 @@
 # GMSSL rust 绑定
 
-* 此仓库为[GmSSL-3.1.0](https://github.com/guanzhi/GmSSL)的绑定 采用静态链接
+* 此仓库为[GmSSL](https://github.com/guanzhi/GmSSL)的绑定 采用静态链接
 
 # Features
 * `ENABLE_SM2_ALGOR_ID_ENCODE_NULL` Enable AlgorithmIdenifier with algorithm sm2sign_with_sm3 encode a NULL object as parameters

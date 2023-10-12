@@ -2,6 +2,9 @@
 
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 
+pub use aes_ctr_encrypt as aes_ctr_decrypt;
+
+
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -14,6 +14,8 @@ license = "Apache-2.0"
 bindgen = "0.68.1"
 cmake = "0.1"
 
+[dev-dependencies]
+hex = "0.4"
 
 [features]
 ENABLE_SM2_ALGOR_ID_ENCODE_NULL = []
@@ -26,3 +28,11 @@ ENABLE_BROKEN_CRYPTO = []
 ENABLE_RDRND = []
 ENABLE_GMT_0105_RNG = []
 ENABLE_HTTP_TESTS = []
+
+[[test]]
+name = "aeadtest"
+path = "tests/aeadtest.rs"
+
+[[test]]
+name = "aestest"
+path = "tests/aestest.rs"
