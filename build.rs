@@ -5,9 +5,8 @@ fn main() {
     // 编译GmSSL
     let mut config = cmake::Config::new("GmSSL");
     config
-        .define("ENABLE_SM2_EXTS", "ON") // sm2 扩展
         .define("BUILD_SHARED_LIBS", "OFF") // 静态链接
-        .configure_arg("--no-warn-unused-cli") // 交叉编译时防止cmake 报错
+        // .configure_arg("--no-warn-unused-cli") // 交叉编译时防止cmake 报错
         .build_target("gmssl"); // 仅仅编译库
 
     env::vars()
@@ -19,6 +18,7 @@ fn main() {
             }
         })
         .for_each(|arg| {
+            println!("CARGO_FEATURE {}", arg);
             config.define(arg, "ON");
         });
 

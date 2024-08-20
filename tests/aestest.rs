@@ -311,40 +311,40 @@ fn test_aes_gcm() {
         let mut tag = [0_u8; 16];
         let mut buf = [0_u8; 64];
         let i = 0;
-        for i in 0..aes_gcm_tests.len() {
+        for (i,item) in aes_gcm_tests.iter().enumerate() {
             hex_to_bytes(
-                aes_gcm_tests[i].K.as_ptr() as _,
-                aes_gcm_tests[i].K.len(),
+                item.K.as_ptr() as _,
+                item.K.len(),
                 K.as_mut_ptr(),
                 &mut Klen,
             );
             hex_to_bytes(
-                aes_gcm_tests[i].P.as_ptr() as _,
-                aes_gcm_tests[i].P.len(),
+                item.P.as_ptr() as _,
+                item.P.len(),
                 P.as_mut_ptr(),
                 &mut Plen,
             );
             hex_to_bytes(
-                aes_gcm_tests[i].A.as_ptr() as _,
-                aes_gcm_tests[i].A.len(),
+                item.A.as_ptr() as _,
+                item.A.len(),
                 A.as_mut_ptr(),
                 &mut Alen,
             );
             hex_to_bytes(
-                aes_gcm_tests[i].IV.as_ptr() as _,
-                aes_gcm_tests[i].IV.len(),
+                item.IV.as_ptr() as _,
+                item.IV.len(),
                 IV.as_mut_ptr(),
                 &mut IVlen,
             );
             hex_to_bytes(
-                aes_gcm_tests[i].C.as_ptr() as _,
-                aes_gcm_tests[i].C.len(),
+                item.C.as_ptr() as _,
+                item.C.len(),
                 C.as_mut_ptr(),
                 &mut Clen,
             );
             hex_to_bytes(
-                aes_gcm_tests[i].T.as_ptr() as _,
-                aes_gcm_tests[i].T.len(),
+                item.T.as_ptr() as _,
+                item.T.len(),
                 T.as_mut_ptr(),
                 &mut Tlen,
             );

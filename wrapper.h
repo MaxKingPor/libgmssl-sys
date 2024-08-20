@@ -1,6 +1,8 @@
-#include <gmssl/aead.h>
+// #include <gmssl/aead.h>
 #include <gmssl/error.h>
-#include <gmssl/gcm.h>
+// #include <gmssl/gcm.h>
+#include <gmssl/aes.h>
+#include <gmssl/asn1.h>
 #include <gmssl/hex.h>
 #include <gmssl/mem.h>
 #include <gmssl/rand.h>
