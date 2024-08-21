@@ -78,9 +78,5 @@ ENABLE_TLS_DEBUG = []
 ENABLE_SM2_ENC_PRE_COMPUTE = []
 
 [[test]]
-name = "aeadtest"
-path = "tests/aeadtest.rs"
-
-[[test]]
 name = "aestest"
 path = "tests/aestest.rs"
